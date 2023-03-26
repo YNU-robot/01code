@@ -1,0 +1,27 @@
+nohup: ignoring input
+Processing ./torch-1.10.0-cp36-cp36m-linux_aarch64.whl
+Exception:
+Traceback (most recent call last):
+  File "/home/jetson/codeSpace/lib/python3.6/site-packages/pip/basecommand.py", line 215, in main
+    status = self.run(options, args)
+  File "/home/jetson/codeSpace/lib/python3.6/site-packages/pip/commands/install.py", line 353, in run
+    wb.build(autobuilding=True)
+  File "/home/jetson/codeSpace/lib/python3.6/site-packages/pip/wheel.py", line 749, in build
+    self.requirement_set.prepare_files(self.finder)
+  File "/home/jetson/codeSpace/lib/python3.6/site-packages/pip/req/req_set.py", line 380, in prepare_files
+    ignore_dependencies=self.ignore_dependencies))
+  File "/home/jetson/codeSpace/lib/python3.6/site-packages/pip/req/req_set.py", line 620, in _prepare_file
+    session=self.session, hashes=hashes)
+  File "/home/jetson/codeSpace/lib/python3.6/site-packages/pip/download.py", line 809, in unpack_url
+    unpack_file_url(link, location, download_dir, hashes=hashes)
+  File "/home/jetson/codeSpace/lib/python3.6/site-packages/pip/download.py", line 715, in unpack_file_url
+    unpack_file(from_path, location, content_type, link)
+  File "/home/jetson/codeSpace/lib/python3.6/site-packages/pip/utils/__init__.py", line 617, in unpack_file
+    flatten=not filename.endswith('.whl')
+  File "/home/jetson/codeSpace/lib/python3.6/site-packages/pip/utils/__init__.py", line 502, in unzip_file
+    zip = zipfile.ZipFile(zipfp, allowZip64=True)
+  File "/usr/lib/python3.6/zipfile.py", line 1131, in __init__
+    self._RealGetContents()
+  File "/usr/lib/python3.6/zipfile.py", line 1198, in _RealGetContents
+    raise BadZipFile("File is not a zip file")
+zipfile.BadZipFile: File is not a zip file
